@@ -1,0 +1,45 @@
+//public void ImportDrivers()
+//{
+// var fileData = File.ReadAllLines(@"C:\Users\PC\Desktop\DRIVERS.txt");
+
+// var images = Directory.GetFiles(@"C:\Users\PC\Downloads\project\GosAvtoInspection\DriverPhotos");
+
+
+// foreach (var line in fileData)
+// {
+// var data = line.Split('\t');
+
+// var tempDriver = new Driver
+// {
+// DriverId = int.Parse(data[0]),
+// DriverName = data[1].Replace("\"", ""),
+// DriverSurname = data[2].Replace("\"", ""),
+// DriverMiddlename = data[3].Replace("\"", ""),
+// DriverPassSeries = data[4].Replace("\"", ""),
+// DriverPassNumber = data[5].Replace("\"", ""),
+// DriverPostCode = data[6].Replace("\"", ""),
+// DriverAddress = data[7].Replace("\"", ""),
+// DriverDescription = data[8].Replace("\"", ""),
+// DriverCompany = data[9].Replace("\"", ""),
+// DriverJob = data[10].Replace("\"", ""),
+// DriverPhone = data[11].Replace("\"", ""),
+// DriverEmail = data[12].Replace("\"", "")
+
+// };
+
+
+// try
+// {
+// tempDriver.DriverImage = File.ReadAllBytes(images.FirstOrDefault());
+// }
+// catch (Exception ex)
+// {
+// MessageBox.Show(ex.Message.ToString());
+// }
+
+
+// App.Context.Driver.Add(tempDriver);
+// App.Context.SaveChanges();
+// }
+
+//}
